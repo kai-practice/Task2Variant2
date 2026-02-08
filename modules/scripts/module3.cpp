@@ -15,4 +15,4 @@ static Module module(
 	module_init,
 	"Инициация" );
 
-//
+///
