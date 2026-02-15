@@ -2,7 +2,6 @@
 #include "../../format.h"
 #include "../Modules.h"
 
-using namespace std;
 
 static void module_init()
 {
@@ -10,13 +9,13 @@ static void module_init()
 
 	int m, n;
 
-	cout << "Введіть перше натуральне число (m): ";
-	cin >> m;
-	cout << "Введіть друге натуральне число (n): ";
-	cin >> n;
+	std::cout << "Введіть перше натуральне число (m): ";
+	std::cin >> m;
+	std::cout << "Введіть друге натуральне число (n): ";
+	std::cin >> n;
 
 	if (m < 1 || n < 1) {
-		cout << "Помилка: Числа повинні бути натуральними (>= 1)." << endl;
+		std::cout << "Помилка: Числа повинні бути натуральними (>= 1)." << std::endl;
 		return;
 	}
 
@@ -33,9 +32,8 @@ static void module_init()
 	}
 
 	std::cout << "\n--- Результати ---" << "\n";
-	cout << "1. Через цикл for:   " << m << " * " << n << " = " << product_for << endl;
-	cout << "2. Через цикл while: " << m << " * " << n << " = " << product_while << endl;
-
+	std::cout << "1. Через цикл for:   " << m << " * " << n << " = " << product_for << std::endl;
+	std::cout << "2. Через цикл while: " << m << " * " << n << " = " << product_while << std::endl;
 
 }
 
