@@ -87,7 +87,6 @@ static void module_init()
     std::cout << "--------------------------\n";
 }
 
-// Реєстрація модуля
 static Module module(
     module_init,
     "Завдання 4 (Геометрія)"
